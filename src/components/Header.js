@@ -7,12 +7,16 @@ const Header = ({sideBarToogle,setSideBarToogle}) => {
                 <i className='fas fa-bars'/>
             </HeaderItem>
             <HeaderItem>
+                <div className='movil'>
                 <i className='fas fa-border-all'/>
              <span>Dashboard</span>   
+             </div>
             </HeaderItem>
             <HeaderItem>
+            <div className='movil'>
                 <i className='fas fa-images'/>
                <span>Collections</span> 
+               </div>
             </HeaderItem>
             <Placeholder />
             <HeaderItem>
@@ -44,20 +48,34 @@ const HeaderItem = styled.div`
  color: #eee;
  padding: 10px 16px;
  border-radius: 4px;
+ .movil{
+        @media (max-width: 768px) { 
+       
+       display: none;
+   }
+    }
+
 
  span{
      margin-left: 10px;
      font-weight: 500;
+
+   
  }
+ 
  &:hover {
      background-color: #18181f;
      transition: 0.3s;
      cursor: pointer;
  }
+
+  
+
 `
 
 const Placeholder = styled.div`
  flex: 1;
+ 
 `
 const Profile = styled.div`
  display: flex;
@@ -66,4 +84,8 @@ const Profile = styled.div`
       height: 40px;
       border-radius: 50%
     }
+    @media (max-width: 768px) { 
+       
+       align-items: flex-end;
+   }
 `

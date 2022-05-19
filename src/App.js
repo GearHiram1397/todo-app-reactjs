@@ -12,7 +12,7 @@ function App() {
   // we set a  state sideBarToogle and setSideBarToogle to update the state to interact with 
   // the sidebar to know if its open or close
 /* Setting the state of the sidebar to true and setting the todolist to the array of objects. */
-  const [sideBarToogle, setSideBarToogle] = useState(true)
+  const [sideBarToogle, setSideBarToogle] = useState(false)
   const todoList = [{
     name: 'Personal',
     color: '#fd76a1',
@@ -59,6 +59,7 @@ const Wrapper = styled.div`
  min-height: 100vh;
  min-width: 100vw;
  color: #eee;
+
 `
 const Main = styled.div`
  display: flex;
@@ -67,6 +68,11 @@ const MainContent = styled.div`
   display: flex;
   justify-content: center;
   transition: 0.3s;
+  
+  @media (max-width: 768px) { 
+       
+       padding-left: 35px;
+   }
 `
 
 const TodoContent = styled.div`
@@ -78,10 +84,23 @@ const Tittle = styled.div`
   margin: 50px 0;
   font-size: 30px;
   font-weight: 700;
+  
+  
+        @media (max-width: 768px) { 
+       margin: 20px 0;
+        font-size: 26px;
+   }
+    
+
 `
 
 const Greeting = styled.div`
   margin-bottom: 20px;
   font-size: 36px;
   font-weight: 800;
+  
+  @media (max-width: 768px) { 
+       
+      font-size: 30px;
+   }
 `

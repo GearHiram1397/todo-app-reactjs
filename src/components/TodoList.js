@@ -82,6 +82,10 @@ const Wrapper = styled.div`
  margin-bottom: 30px;
  border-radius: 20px;
  overflow: hidden;
+ @media (max-width: 768px) { 
+       width: 320px;
+      margin-left: 16px;
+   }
 `
 
 const TodoCategoryHeader = styled.div`
@@ -91,6 +95,11 @@ const TodoCategoryHeader = styled.div`
  align-items: center;
  padding: 15px 20px;
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
 `
 
 const CategoryIcon = styled.div`
@@ -101,11 +110,22 @@ const CategoryIcon = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 10px;
+
+    @media (max-width: 768px) {
+        height: 35px;
+        width: 35px;
+    }
 `
 const Title = styled.div`
   flex: 1;
   font-size: 18px;
   font-weight: 600;
+  @media (max-width: 768px) { 
+       margin-top: 10px;
+       margin-bottom: 5px;
+       text-align: center;
+       font-size: 18px;
+      }
 `
 
 const TodoInput = styled.input`
@@ -118,6 +138,12 @@ const TodoInput = styled.input`
     color: #eee;
     padding: 4px 10px;
     margin-right: 4px;
+    @media (max-width: 768px) { 
+       height: 25px;
+         font-size: 20px;
+       margin-top: 10px;
+       margin-bottom: 20px;
+      }
 `
 
 const AddTodo = styled.i`

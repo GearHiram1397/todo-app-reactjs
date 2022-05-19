@@ -28,6 +28,11 @@ const Wrapper = styled.div`
   height: calc(100vh - 70px);
   background-color: #20212d;
   padding-left: 35px;
+
+  @media (max-width: 768px) { 
+   display: none;
+
+    }
 `
 
 const Title = styled.div`

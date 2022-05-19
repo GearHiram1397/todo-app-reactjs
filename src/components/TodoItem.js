@@ -74,6 +74,12 @@ const TodoListItem = styled.div`
         border: none;
         color: #eee;
         padding: 10px;
+
+        @media (max-width: 768px) { 
+       
+       font-size: 18px;
+       width: 50px;
+      }
     }
 `
 
@@ -81,6 +87,7 @@ const Checkbox = styled.div`
   font-size: 20px;
   margin-left: 10px;
   cursor: pointer;
+ 
 `
 
 const DeleteTodo = styled.div`
